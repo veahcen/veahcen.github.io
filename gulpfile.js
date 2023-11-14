@@ -25,6 +25,7 @@ gulp.task('styles', function() {
         .pipe(autoprefixer()) // 
         .pipe(cleanCSS({compatibility: 'ie8'})) //очистка css
         .pipe(gulp.dest("dist/css")) //куда положить новый файл
+        .pipe(gulp.dest("src/css")) //куда положить новый файл
         .pipe(browserSync.stream()); // после изменения запуск заново
 });
 

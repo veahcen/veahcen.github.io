@@ -1,0 +1,11 @@
+@import 'libs/global';
+@import 'libs/font';
+@import 'base/variables';
+
+.content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
