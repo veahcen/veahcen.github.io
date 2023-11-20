@@ -6,6 +6,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const imagemin = require('gulp-imagemin');
 const htmlmin = require('gulp-htmlmin');
+const plumber = require('gulp-plumber');
 
 gulp.task('server', function() {
 
@@ -20,6 +21,7 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
+        .pipe(plumber())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) // запустили sass какой стиль и показ где ошибка
         .pipe(rename({suffix: '.min', prefix: ''}))// min css делаем
         .pipe(autoprefixer()) // 
@@ -31,6 +33,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() { // отслеживание изменения в файлах стилей и хтмл
     gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));// gulp.parallel('styles') что изменяется
+    gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts', browserSync.reload));
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
 })
 
@@ -42,6 +45,7 @@ gulp.task('html', function() {
 
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
+        .pipe(plumber())
         .pipe(gulp.dest("dist/js"));
 });
 
@@ -52,6 +56,7 @@ gulp.task('fonts', function () {
 
 gulp.task('icons', function () {
     return gulp.src("src/icons/**/*")
+        .pipe(plumber())
         .pipe(gulp.dest("dist/icons"));
 });
 
@@ -62,6 +67,7 @@ gulp.task('mailer', function () {
 
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
+        .pipe(plumber())
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
 });

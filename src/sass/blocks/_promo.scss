@@ -1,4 +1,5 @@
 .promo {
+  padding-bottom: 70px;
   width: 100%;
   min-height: 700px;
   margin-bottom: 93px;
@@ -11,7 +12,7 @@
     padding-top: 79px;
     padding-bottom: 60px;
     color: $main-color;
-    font-family: Sansation;
+    font-family: Sansation, sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: normal;
@@ -33,7 +34,7 @@
       gap: 10px;
       list-style: none;
       color: #000;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
       line-height: normal;
     }

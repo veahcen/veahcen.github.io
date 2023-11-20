@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('../fonts/fontsMontserrat-Regular.woff') format('woff');
+        url('../fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/fontsMontserrat-Medium.woff2') format('woff2'),
-        url('../fonts/fontsMontserrat-Medium.woff') format('woff');
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/fontsMontserrat-Light.woff2') format('woff2'),
-        url('../fonts/fontsMontserrat-Light.woff') format('woff');
+    src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/Montserrat-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/fontsMontserrat-SemiBold.woff2') format('woff2'),
-        url('../fonts/fontsMontserrat-SemiBold.woff') format('woff');
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -38,6 +38,15 @@
     font-family: 'Sansation';
     src: url('../fonts/SansationRegular.woff2') format('woff2'),
         url('../fonts/SansationRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display SC';
+    src: url('../fonts/PlayfairDisplaySC-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplaySC-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
