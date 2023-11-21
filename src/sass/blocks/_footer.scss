@@ -2,4 +2,41 @@
   background: #C5DFFE;
   padding: 20px 120px;
   min-height: 140px;
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__logo {
+    align-self: center;
+    display: block;
+    max-width: 92px;
+  }
+  &__links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: end;
+  }
+  &__link {
+    text-decoration: none;
+    color: $main-color;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__addres {
+    color: $main-color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__item {
+    display: flex;
+    gap: 10px;
+  }
+  &__social {
+    display: block;
+    max-width: 35px;
+    max-height: 35px;
+  }
 }

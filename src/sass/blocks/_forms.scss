@@ -3,11 +3,12 @@
   max-width: 535px;
   min-height: 493px;
   border-radius: 45px;
-  background-color: red;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 0 47px;
+  box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.25);
   input {
     max-width: 439px;
     min-height: 50px;
