@@ -23,7 +23,7 @@
     border-radius: 50px;
     &-windows {
       position: relative;
-      background: url(../../img/windows.png) center center/cover no-repeat;
+      background: url(../img/windows.png) center center/cover no-repeat;
       &:hover {
         .overlay {
           display: block;
@@ -32,7 +32,7 @@
     }
     &-balconies {
       position: relative;
-      background: url(../../img/balconies.png) center center/cover no-repeat;
+      background: url(../img/balconies.png) center center/cover no-repeat;
       &:hover {
         .overlay {
           display: block;
@@ -41,7 +41,7 @@
     }
     &-lodges {
       position: relative;
-      background: url(../../img/lodges.png) center center/cover no-repeat;
+      background: url(../img/lodges.png) center center/cover no-repeat;
       &:hover {
         .overlay {
           display: block;
