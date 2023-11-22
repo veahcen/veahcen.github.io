@@ -26,6 +26,7 @@ $(document).ready(function(){
   $('.reviews__slider-carousel').slick({
     centerMode: true,
     variableWidth: true,
+    speed: 300,
     slidesToShow: 3,
     responsive: [
       {
@@ -47,23 +48,31 @@ $(document).ready(function(){
     nextArrow: '.slick-next2',
   });
 
-  $('.reviews__slider-carousel').on('afterChange', function(event, slick, currentSlide){
-  // Удаляем предыдущий custom-center-style класс у всех элементов
-  $('.reviews__slider-carousel-item').fadeOut(300, function() { 
-    $(this).removeClass('custom-center-style').fadeIn(300);
-  });
-  $('.custom-center-style').fadeOut(300, function() { 
-    $(this).removeClass('custom-center-style').addClass('reviews__slider-carousel-item').fadeIn(300);
-  });
+  
 
-  // Получаем индекс центрального слайда
-  var centerIndex = slick.currentSlide;
+  function changeSlider(change) {
+    $(change).on('click', function() {
+    var slider = $('.reviews__slider-carousel'); // Замените на свой селектор
+    var centerIndex = slider.slick('slickCurrentSlide');
 
-  // Добавляем custom-center-style класс к центральному слайду
-  $('.reviews__slider-carousel-item[data-slick-index="' + centerIndex + '"]').fadeOut(300, function() {
+    // Удаляем предыдущий custom-center-style класс у всех элементов
+    $('.reviews__slider-carousel-item').fadeOut(300, function() { 
+      $(this).removeClass('custom-center-style').fadeIn(300);
+    });
+    $('.custom-center-style').fadeOut(300, function() { 
+     $(this).removeClass('custom-center-style').addClass('reviews__slider-carousel-item').fadeIn(300);
+    });
+
+    // Добавляем custom-center-style класс к центральному слайду
+    $('.reviews__slider-carousel-item[data-slick-index="' + centerIndex + '"]').fadeOut(300, function() {
     $(this).addClass('custom-center-style').removeClass('reviews__slider-carousel-item').fadeIn(300);
    });
-  });
+
+   });
+  }
+
+  changeSlider('.slick-prev2')
+  changeSlider('.slick-next2')
 
   function validateForms(form){
     $(form).validate({
@@ -92,5 +101,6 @@ $(document).ready(function(){
   validateForms('#consultation-form');
 
   $('input[name=phone]').mask("+7 (999) 999-99-99");
+
   
 });

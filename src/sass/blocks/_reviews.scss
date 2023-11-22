@@ -1,4 +1,5 @@
 .reviews {
+   transition: 5s all;
    position: relative;
     &__header {
       text-align: center;
@@ -13,7 +14,8 @@
     &__slider-carousel {
       position: relative;
       max-width: 1200px;
-      min-height: 153px;
+      min-height: 264px;
+      z-index: 1;
       &-item {
         padding-top: 40px;
         width: 300px;
@@ -88,70 +90,68 @@
     left: -66px;
     border: none;
     background-color: transparent;
-    z-index: 10;
+    z-index: 8;
   }
 }
 
 .custom-center-style {
   .reviews {
-   position: relative;
-  &__slider-carousel {
+    transition:5s all;
     position: relative;
-    max-width: 1200px;
-    min-height: 153px;
-    z-index: 1;
-    &-item {
-      width: 450px;
-      margin: 0 35px;
-    }
-  }
-  &__wraper {
-    display: inline-block;
-    position: relative;
-    min-height: 264px;
-    padding-top: 34px;
-    &-header {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      &-img {
-        display: block;
-        width: 48px;
-        height: 48px;
-        border-radius: 100%;
-        background-color: red;
-        margin-bottom: 5px;
-      }
-      &-name {
-        text-align: center;
-        font-size: 11px;
-        font-weight: 600;
+    &__slider-carousel {
+      &-item {
+        width: 450px;
+        min-height: 264px;
+        margin: 0 35px;
       }
     }
-    &-block {
-      width: 450px;
-      min-height: 230px;
-      border-radius: 30px;
-      border: 36px solid #F0F8FA;
-      &-text {
-        padding: 20px;
-          font-size: 13px;
-          font-weight: 400;
-          margin-bottom: 10px;
-          overflow: hidden;
-          word-wrap: break-word;
-      }
-      &-img {
+    &__wraper {
+      display: inline-block;
+      position: relative;
+      min-height: 264px;
+      padding-top: 34px;
+      &-header {
         position: absolute;
-        bottom: 14%;
-        right: 10%;
-        text-decoration: none;
-        color: $main-color;
-        font-size: 11px;
-        font-weight: 400;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        &-img {
+          display: block;
+          width: 48px;
+          height: 48px;
+          border-radius: 100%;
+          background-color: red;
+          margin-bottom: 5px;
+        }
+        &-name {
+          text-align: center;
+          font-size: 11px;
+          font-weight: 600;
+        }
+      }
+      &-block {
+        width: 450px;
+        min-height: 230px;
+        border-radius: 30px;
+        border: 36px solid #F0F8FA;
+        &-text {
+          padding: 20px;
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        &-img {
+          position: absolute;
+          bottom: 14%;
+          right: 10%;
+          text-decoration: none;
+          color: $main-color;
+          font-size: 11px;
+          font-weight: 400;
+        }
       }
     }
-  }
   }
 }
