@@ -23,12 +23,20 @@
     color: $main-color;
     font-size: 14px;
     font-weight: 400;
+    transition: 0.5s all;
+    &:hover {
+      color: #556BF5;
+    }
   }
   &__addres {
     color: $main-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
+    transition: 0.5s all;
+    &:hover {
+      color: #556BF5;
+    }
   }
   &__item {
     display: flex;
