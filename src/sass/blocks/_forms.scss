@@ -16,17 +16,23 @@
     background: #F4F4F4;  
     border: none;
     padding: 15px 0 15px 30px;
-    &:nth-child(1) {
+    &:first-child {
       margin-top: 80px;
     }
-    &:nth-child(3) {
+
+    &[name="text"] {
       padding-bottom: 83px;
       min-height: 119px;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
     }
   }
 
 }
 .feed-form-b {
   margin-bottom: 166px;
+}
+#name-error, #phone-error {
+  text-align: center;
+  color: $main-color;
+  border: none;
 }

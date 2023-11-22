@@ -56,4 +56,10 @@
   font-size: 18px;
   font-weight: 500;
   line-height: normal;
+  transition: 0.5s all;
+  &:hover {
+    color: #556BF5;
+    background-color: #FFFEFE;
+    box-shadow: 1px 1px 1px 1px #556BF5;
+  }
 }
