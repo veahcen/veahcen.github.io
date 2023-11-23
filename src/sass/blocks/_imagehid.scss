@@ -1,5 +1,6 @@
 .reviews__wraper-block-img:hover {
   cursor: pointer;
+  color: #556BF5;
 }
 .reviews__wraper-block-img:active {
   color: transparent;
@@ -11,4 +12,12 @@
   background: red;
   display: block;
   z-index: 10;
+}
+
+.reviews__wraper-block-img {
+  &-olga {
+   &:active {
+     background: url(../img/main.jpg) center center/cover no-repeat;
+   }
+  }
 }

@@ -1,29 +1,30 @@
 $(document).ready(function(){
-  $('.slider__carousel').slick({
-    variableWidth: true,
-    centerMode: false,
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          slidesToShow: 1
-        }
-      }
-    ],
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
-  });
+  // $('.slider__carousel').slick({
+  //   variableWidth: true,
+  //   centerMode: false,
+  //   slidesToShow: 3,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         slidesToShow: 2
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         slidesToShow: 1
+  //       }
+  //     }
+  //   ],
+  //   prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+  //   nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
+  // });
 
   $('.reviews__slider-carousel').slick({
+    swipe: false,
     centerMode: true,
     variableWidth: true,
     speed: 300,
@@ -74,6 +75,8 @@ $(document).ready(function(){
   changeSlider('.slick-prev2')
   changeSlider('.slick-next2')
 
+  
+
   function validateForms(form){
     $(form).validate({
         rules: {
@@ -99,8 +102,23 @@ $(document).ready(function(){
   };
   
   validateForms('#consultation-form');
+  validateForms('#modal-form');
 
   $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+  $("#menu").on("click", ".js-scroll", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+  $('[data-modal=order]').on('click', function() {
+      $('.overla, #order').fadeIn('slow'); // показать окно и задний фон
+  });
+  $('.modal__close').on('click', function() {
+      $('.overla, #order').fadeOut('slow'); // закрыть окно
+  });
   
+
 });

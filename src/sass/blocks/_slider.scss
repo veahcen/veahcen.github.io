@@ -11,9 +11,25 @@
     font-weight: 400;
     line-height: normal;
   }
+  &__descr {
+    position: relative;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: 4;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 70px 0 0 30px;
+  }
   &__carousel {
+    display: flex;
+    gap: 34px;
+    flex-wrap: wrap;
     &-item {
-      margin: 0 15px;
       width: 306px;
       height: 557px;
     }
@@ -48,27 +64,12 @@
         }
       }
     }
-    &-doors {
-      position: relative;
-    }
-    &-blinds {
-      position: relative;
-    }
-    &-shutters {
-      position: relative;
-    }
-    &-ceilings {
-      position: relative;
-    }
-    &-greenhouses {
-      position: relative;
-    }
   }
   &__text {
     text-align: center;
     padding-top: 20px;
     color: $main-color;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
   }
 }
@@ -82,18 +83,19 @@
   height: 100%;
   border-radius: 50px;
   background: rgba(57, 57, 57, 0.80);
+  z-index: 0;
 }
 
-.slick-prev, .slick-next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -66px;
-  border: none;
-  background-color: #fff;
-}
-.slick-next {
-  right: -66px;
-  left: auto;
-}
+// .slick-prev, .slick-next {
+//   cursor: pointer;
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   left: -66px;
+//   border: none;
+//   background-color: #fff;
+// }
+// .slick-next {
+//   right: -66px;
+//   left: auto;
+// }

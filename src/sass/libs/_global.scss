@@ -27,9 +27,11 @@ blockquote {
 }
 
 a {
+  text-decoration: none;
   color: inherit;
 }
 
-img {
+img, video, canvas {
   width: 100%;
+  overflow: hidden;
 }

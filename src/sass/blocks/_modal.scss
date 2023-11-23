@@ -1,0 +1,42 @@
+.overla {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba($color: #000000, $alpha: .56);
+  z-index: 11;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 400px;
+  background-color: transparent;
+  z-index: 12;
+  &__close {
+    position: absolute;
+    top: -14px;
+    right: -29px; 
+    font-size: 41px;
+    line-height: 21px;
+    color: #556BF5; 
+    cursor: pointer;
+  }
+  &_mini {
+    min-height: 140px;
+  }
+  .error {
+    border: 1px solid red;
+    margin-bottom: 15px;
+  }
+  label.error {
+    border: none;
+  }
+}
+
+#consultation, #order, #thanks {
+  display: none;
+}

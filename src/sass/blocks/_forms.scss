@@ -3,11 +3,11 @@
   max-width: 535px;
   min-height: 493px;
   border-radius: 45px;
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 0 47px;
+  background: #FFF;
   box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.25);
   input {
     max-width: 439px;
@@ -26,13 +26,16 @@
       margin-bottom: 25px;
     }
   }
-
-}
-.feed-form-b {
-  margin-bottom: 166px;
+  .error {
+    border: 1px solid red;
+    margin-bottom: 15px;
+  }
 }
 #name-error, #phone-error {
   text-align: center;
   color: $main-color;
   border: none;
+}
+input::placeholder {
+  white-space: pre-line; 
 }
