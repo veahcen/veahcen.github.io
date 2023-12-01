@@ -19,11 +19,14 @@
   &__close {
     position: absolute;
     top: -14px;
-    right: -29px; 
-    font-size: 41px;
+    right: -40px; 
+    font-size: 64px;
     line-height: 21px;
     color: #556BF5; 
     cursor: pointer;
+    &:hover {
+      color: #000;
+    }
   }
   &_mini {
     min-height: 140px;

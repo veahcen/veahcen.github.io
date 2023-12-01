@@ -36,5 +36,8 @@
     display: block;
     max-width: 35px;
     max-height: 35px;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

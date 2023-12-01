@@ -39,6 +39,9 @@
           border-radius: 100%;
           background-color: red;
           margin-bottom: 2px;
+          img {
+            border-radius: 100%;
+          }
         }
         &-name {
           text-align: center;
@@ -52,9 +55,11 @@
         border-radius: 30px;
         border: 24px solid #F0F8FA;
         &-text {
+          max-height: 92px;
           padding: 14px 13px 34px 13px;
           font-size: 8px;
           font-weight: 400;
+          overflow: hidden;
         }
         &-img {
           position: absolute;
@@ -135,12 +140,13 @@
         border-radius: 30px;
         border: 36px solid #F0F8FA;
         &-text {
+          max-height: 135px;
           padding: 20px;
-            font-size: 13px;
-            font-weight: 400;
-            margin-bottom: 10px;
-            overflow: hidden;
-            word-wrap: break-word;
+          font-size: 13px;
+          font-weight: 400;
+          margin-bottom: 10px;
+          overflow: hidden;
+          word-wrap: break-word;
         }
         &-img {
           position: absolute;

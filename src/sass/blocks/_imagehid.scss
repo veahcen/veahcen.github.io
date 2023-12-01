@@ -2,7 +2,7 @@
   cursor: pointer;
   color: #556BF5;
 }
-.reviews__wraper-block-img:active {
+.reviews__wraper-block-img:hover {
   color: transparent;
   position: absolute;
   top: 0;
@@ -16,8 +16,29 @@
 
 .reviews__wraper-block-img {
   &-olga {
-   &:active {
-     background: url(../img/main.jpg) center center/cover no-repeat;
+   &:hover {
+     background: url(../img/reviews/imageolga.png) center center/cover no-repeat;
+    
+   }
+  }
+  &-nasta {
+   &:hover {
+     background: url(../img/reviews/imagenasta.png) center center/cover no-repeat;
+   }
+  }
+  &-dmitry {
+   &:hover {
+     background: url(../img/reviews/imagedmitry.png) center center/cover no-repeat;
+   }
+  }
+  &-elena {
+   &:hover {
+     background: url(../img/reviews/imageelena.png) center center/cover no-repeat;
+   }
+  }
+  &-sergey {
+   &:hover {
+     background: url(../img/reviews/imagesergey.png) center center/cover no-repeat;
    }
   }
 }

@@ -45,6 +45,9 @@
     display: block;
     max-width: 35px;
     max-height: 35px;
+    &:hover {
+      opacity: 0.8;
+    }
     &-img {
       background-color: #fff;
       border-radius: 9px;

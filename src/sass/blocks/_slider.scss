@@ -26,12 +26,10 @@
     padding: 70px 0 0 30px;
   }
   &__carousel {
-    display: flex;
-    gap: 34px;
-    flex-wrap: wrap;
     &-item {
+      margin: 0 15px;
       width: 306px;
-      height: 557px;
+      height: 577px;
     }
   }
   &__wrapper {
@@ -66,10 +64,12 @@
     }
   }
   &__text {
+    max-height: 120px;
+    //overflow: hidden;
     text-align: center;
     padding-top: 20px;
     color: $main-color;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 400;
   }
 }
@@ -86,16 +86,16 @@
   z-index: 0;
 }
 
-// .slick-prev, .slick-next {
-//   cursor: pointer;
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   left: -66px;
-//   border: none;
-//   background-color: #fff;
-// }
-// .slick-next {
-//   right: -66px;
-//   left: auto;
-// }
+.slick-prev, .slick-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -66px;
+  border: none;
+  background-color: #fff;
+}
+.slick-next {
+  right: -66px;
+  left: auto;
+}
