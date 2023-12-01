@@ -120,5 +120,19 @@ $(document).ready(function(){
       $('.overla, #order').fadeOut('slow'); // закрыть окно
   });
   
+  const menu = $('.header__links-list');
+  const menuItem = $('.header__links-list-item');
+  const hamburger = $('.header__hamburger');
+
+  hamburger.click(function () {
+    hamburger.toggleClass('header__hamburger_active');
+    menu.toggleClass('header__links-list_active');
+  });
+
+  menuItem.click(function () {
+    hamburger.toggleClass('header__hamburger_active');
+    menu.toggleClass('header__links-list_active');
+  });
 
 });
+

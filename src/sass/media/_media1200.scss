@@ -1,0 +1,20 @@
+@media (max-width: 1200px) {
+  .content-section {
+    max-width: 960px;
+  }
+  .header {
+    gap: 80px;
+    &__links-list {
+      gap: 13px;
+      &-item {
+        &-b {
+          font-size: 16px;
+        }
+      }
+    }
+    &__social {
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
+}

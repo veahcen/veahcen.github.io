@@ -1,0 +1,25 @@
+@media (max-width: 991px) {
+  .content-section {
+    max-width: 720px;
+  }
+  .header {
+    padding: 17px;
+    gap: 85px;
+    &__links-list {
+      gap: 14px;
+      &-item {
+        font-size: 13px;
+        &-b {
+          display: none;
+        }
+      }
+    }
+    &__social {
+      width: 30px;
+      height: 30px;
+    }
+    &__logo {
+      width: 70px;
+    }
+  }
+}
