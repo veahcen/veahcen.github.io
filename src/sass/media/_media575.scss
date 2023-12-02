@@ -69,7 +69,8 @@
   .footer {
     padding: 20px 84px;
     &__grid {
-      grid-template-columns: 100px 1fr;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
       gap: 20px;
     }
     &__links {
@@ -84,6 +85,9 @@
     }
     &__addres {
       font-size: 10px;
+    }
+    &__logo {
+      margin: 0 auto;
     }
   }
 
