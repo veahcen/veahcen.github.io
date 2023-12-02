@@ -17,4 +17,10 @@
       max-height: 30px;
     }
   }
+
+  .promo {
+    &-grid {
+      grid-template-columns: 630px 1fr;
+    }
+  }
 }

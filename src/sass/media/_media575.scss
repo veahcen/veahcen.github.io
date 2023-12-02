@@ -2,4 +2,32 @@
   .content-section {
     max-width: 340px;
   }
+
+  .promo {
+    padding-bottom: 20px;
+    margin-bottom: 55px;
+    height: 500px;
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+    &__header {
+      text-align: center;
+      font-size: 20px;
+      padding-top: 60px;
+    }
+    &__description {
+      display: none;
+    }
+    &__links-list {
+      margin-bottom: 53px;  
+      gap: 15px;
+      text-align: center;
+      &-item {
+        font-size: 10px;
+      }
+    }
+    .bet-button {
+      margin-left: 18%;
+    }
+  }
 }

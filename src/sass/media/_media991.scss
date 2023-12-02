@@ -22,4 +22,28 @@
       width: 70px;
     }
   }
+
+  .promo {
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+    &__header {
+      text-align: center;
+      font-size: 34px;
+    }
+    &__description {
+      text-align: center;
+      font-size: 16px;
+    }
+    &__links-list {
+      gap: 20px;
+      text-align: center;
+      &-item {
+        font-size: 16px;
+      }
+    }
+    .bet-button {
+      margin-left: 34%;
+    }
+  }
 }

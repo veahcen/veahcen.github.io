@@ -70,4 +70,31 @@
   }
   }
   
+  .promo {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    height: 500px;
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+    &__header {
+      text-align: center;
+      font-size: 25px;
+    }
+    &__description {
+      display: none;
+    }
+    &__links-list {
+      margin-bottom: 43px;  
+      gap: 20px;
+      text-align: center;
+      &-item {
+        font-size: 15px;
+      }
+    }
+    .bet-button {
+      margin-left: 30%;
+    }
+  }
+
 }
