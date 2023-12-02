@@ -27,7 +27,22 @@
       }
     }
     .bet-button {
-      margin-left: 18%;
+      margin-left: 13%;
+    }
+  }
+
+  .slider {
+    &__header {
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+    padding: 0;
+    &__carousel {
+      width: 280px;
+      margin: 0 auto;
+      &-item {
+        width: 280px;
+      }
     }
   }
 }

@@ -97,4 +97,16 @@
     }
   }
 
+  .slider {
+    &__header {
+      font-size: 30px;
+      padding-bottom: 40px;
+    }
+    padding: 0;
+    &__carousel {
+      width: 306px;
+      margin: 0 auto;
+    }
+  }
+
 }

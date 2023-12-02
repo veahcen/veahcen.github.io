@@ -23,4 +23,11 @@
       grid-template-columns: 630px 1fr;
     }
   }
+
+  .slider {
+    &__carousel {
+      width: 643px;
+      margin: 0 auto;
+    }
+  }
 }

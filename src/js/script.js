@@ -5,10 +5,23 @@ $(document).ready(function(){
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 991,
         settings: {
           arrows: false,
           slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 1
         }
       },
       {
@@ -127,7 +140,7 @@ $(document).ready(function(){
   hamburger.click(function () {
     hamburger.toggleClass('header__hamburger_active');
     menu.toggleClass('header__links-list_active');
-  });
+  }); 
 
   menuItem.click(function () {
     hamburger.toggleClass('header__hamburger_active');
