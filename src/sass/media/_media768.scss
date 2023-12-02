@@ -109,4 +109,15 @@
     }
   }
 
+  .free {
+    &__header {
+      font-size: 22px;
+      margin-bottom: 93px;
+    }
+  }
+
+  .modal {
+    width: 450px;
+  }
+
 }

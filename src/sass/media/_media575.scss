@@ -45,4 +45,23 @@
       }
     }
   }
+
+  .feed-form {
+    padding: 0 20px;
+  }
+
+  .free {
+    &__header {
+      font-size: 18px;
+      margin-bottom: 70px;
+    }
+  }
+
+  .modal {
+    width: 280px;
+    &__close {
+      top: -9px;
+      right: -20px;
+    }
+  }
 }
