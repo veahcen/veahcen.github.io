@@ -47,7 +47,7 @@
   }
 
   .feed-form {
-    width: 320px;
+    width: 305px;
     padding: 0 20px;
   }
 
@@ -86,4 +86,99 @@
       font-size: 10px;
     }
   }
+
+  .reviews {
+    &__slider {
+      &-carousel {
+        padding: 0;
+        overflow: hidden;
+        max-width: 305px;
+        margin: 0 auto;
+      }
+    }
+
+    &__slider-controls {
+      padding: 0;
+      position: absolute;
+      width: 340px;
+    }
+  }
+
+  .custom-center-style {
+  .reviews {
+   transition: 5s all;
+   position: relative;
+    &__header {
+      text-align: center;
+      margin-bottom: 70px;
+      color: $main-color;
+      font-family: Playfair Display SC, serif;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &__slider-carousel {
+      position: relative;
+      max-width: 1200px;
+      min-height: 264px;
+      z-index: 1;
+      &-item {
+        padding-top: 40px;
+        width: 300px;
+        margin: 0 70px;
+      }
+    }
+    &__wraper {
+      display: inline-block;
+      position: relative;
+      height: 177px;
+      padding-top: 23px;
+      &-header {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        &-img {
+          display: block;
+          width: 32px;
+          height: 32px;
+          border-radius: 100%;
+          background-color: red; 
+          margin-bottom: 2px;
+          img {
+            border-radius: 100%;
+          }
+        }
+        &-name {
+          text-align: center;
+          font-size: 8px;
+          font-weight: 600;
+        }
+      }
+      &-block {
+        width: 300px;
+        height: 153px;
+        border-radius: 30px;
+        border: 24px solid #F0F8FA;
+        &-text {
+          max-height: 92px;
+          padding: 14px 13px 34px 13px;
+          font-size: 8px;
+          font-weight: 400;
+          overflow: hidden;
+        }
+        &-img {
+          position: absolute;
+          bottom: 16%;
+          right: 12%;
+          text-decoration: none;
+          color: $main-color;
+          font-size: 7px;
+          font-weight: 400;
+        }
+      }
+    }
+ }
+}
 }

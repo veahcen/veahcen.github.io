@@ -45,22 +45,34 @@ $(document).ready(function(){
     slidesToShow: 3,
     responsive: [
       {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
         breakpoint: 768,
         settings: {
-          arrows: false,
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
           slidesToShow: 1
         }
       }
     ],
     prevArrow: '.slick-prev2',
     nextArrow: '.slick-next2',
+    initialSlide: 0,
+    
   });
 
   
@@ -89,7 +101,10 @@ $(document).ready(function(){
   changeSlider('.slick-prev2')
   changeSlider('.slick-next2')
 
-  
+  $(window).on('resize', function () {
+    location.reload();
+  });
+
 
   function validateForms(form){
     $(form).validate({

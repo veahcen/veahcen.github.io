@@ -36,4 +36,18 @@
       grid-template-columns: 300px 1fr;
     }
   }
+
+  .reviews {
+    &__slider {
+      &-carousel {
+        overflow: hidden;
+        max-width: 508px;
+        margin: 0 auto;
+      }
+    }
+
+    &__slider-controls {
+      width: 555px;
+    }
+  }
 }
