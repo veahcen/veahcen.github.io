@@ -47,6 +47,7 @@
   }
 
   .feed-form {
+    width: 320px;
     padding: 0 20px;
   }
 
@@ -62,6 +63,27 @@
     &__close {
       top: -9px;
       right: -20px;
+    }
+  }
+
+  .footer {
+    padding: 20px 84px;
+    &__grid {
+      grid-template-columns: 100px 1fr;
+      gap: 20px;
+    }
+    &__links {
+      align-items: center;
+      &-item {
+        text-align: center;
+
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+    &__addres {
+      font-size: 10px;
     }
   }
 }

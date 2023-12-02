@@ -120,4 +120,23 @@
     width: 450px;
   }
 
+  .footer {
+    &__grid {
+      grid-template-columns: 200px 1fr;
+    }
+    &__links {
+      align-items: center;
+      &-item {
+        text-align: center;
+
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+    &__addres {
+      font-size: 12px;
+    }
+  }
+
 }

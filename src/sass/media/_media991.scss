@@ -54,4 +54,16 @@
       margin: 0 auto;
     }
   }
+
+  .footer {
+    &__grid {
+      grid-template-columns: 200px 1fr;
+    }
+    &__links {
+      align-items: center;
+      &-item {
+        text-align: center;
+      }
+    }
+  }
 }

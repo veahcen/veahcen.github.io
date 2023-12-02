@@ -27,6 +27,7 @@ $(document).ready(function(){
       {
         breakpoint: 480,
         settings: {
+          autoplay: true,
           arrows: false,
           slidesToShow: 1
         }
