@@ -108,7 +108,7 @@
     }
   }
 
-  .custom-center-style {
+  .custom-center-style-min {
   .reviews {
    transition: 5s all;
    position: relative;
@@ -134,6 +134,7 @@
       }
     }
     &__wraper {
+      margin: 0 auto;
       display: inline-block;
       position: relative;
       height: 177px;

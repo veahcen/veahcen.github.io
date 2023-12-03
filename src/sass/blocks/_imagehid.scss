@@ -1,8 +1,4 @@
 .reviews__wraper-block-img:hover {
-  cursor: pointer;
-  color: #556BF5;
-}
-.reviews__wraper-block-img:hover {
   color: transparent;
   position: absolute;
   top: 0;
@@ -14,31 +10,85 @@
   z-index: 10;
 }
 
-.reviews__wraper-block-img {
+// .reviews__wraper-block-img {
+//   &-olga {
+//    &:hover {
+//      background: url(../img/reviews/imageolga.png) center center/cover no-repeat;
+    
+//    }
+//   }
+//   &-nasta {
+//    &:hover {
+//      background: url(../img/reviews/imagenasta.png) center center/cover no-repeat;
+//    }
+//   }
+//   &-dmitry {
+//    &:hover {
+//      background: url(../img/reviews/imagedmitry.png) center center/cover no-repeat;
+//    }
+//   }
+//   &-elena {
+//    &:hover {
+//      background: url(../img/reviews/imageelena.png) center center/cover no-repeat;
+//    }
+//   }
+//   &-sergey {
+//    &:hover {
+//      background: url(../img/reviews/imagesergey.png) center center/cover no-repeat;
+//    }
+//   }
+// }
+
+
+.reviews__wraper-block {
   &-olga {
    &:hover {
      background: url(../img/reviews/imageolga.png) center center/cover no-repeat;
-    
+     color: transparent;
+     background-color: red;
+     .reviews__wraper-block-img {
+      display: none;
+   }
    }
   }
   &-nasta {
    &:hover {
      background: url(../img/reviews/imagenasta.png) center center/cover no-repeat;
+     color: transparent;
+     background-color: red;
+     .reviews__wraper-block-img {
+      display: none;
+   }
    }
   }
   &-dmitry {
    &:hover {
      background: url(../img/reviews/imagedmitry.png) center center/cover no-repeat;
+     color: transparent;
+     background-color: red;
+     .reviews__wraper-block-img {
+      display: none;
+   }
    }
   }
   &-elena {
    &:hover {
      background: url(../img/reviews/imageelena.png) center center/cover no-repeat;
+     color: transparent;
+     background-color: red;
+     .reviews__wraper-block-img {
+      display: none;
+   }
    }
   }
   &-sergey {
    &:hover {
      background: url(../img/reviews/imagesergey.png) center center/cover no-repeat;
+     color: transparent;
+     background-color: red;
+     .reviews__wraper-block-img {
+      display: none;
+   }
    }
   }
 }

@@ -78,29 +78,40 @@ $(document).ready(function(){
   
 
   function changeSlider(change) {
-    $(change).on('click', function() {
-    var slider = $('.reviews__slider-carousel'); // Замените на свой селектор
-    var centerIndex = slider.slick('slickCurrentSlide');
 
-    // Удаляем предыдущий custom-center-style класс у всех элементов
-    $('.reviews__slider-carousel-item').fadeOut(300, function() { 
-      $(this).removeClass('custom-center-style').fadeIn(300);
-    });
-    $('.custom-center-style').fadeOut(300, function() { 
-     $(this).removeClass('custom-center-style').addClass('reviews__slider-carousel-item').fadeIn(300);
-    });
+     var screenWidth = $(window).width(); // Получаем ширину экрана
 
-    // Добавляем custom-center-style класс к центральному слайду
-    $('.reviews__slider-carousel-item[data-slick-index="' + centerIndex + '"]').fadeOut(300, function() {
-    $(this).addClass('custom-center-style').removeClass('reviews__slider-carousel-item').fadeIn(300);
-   });
+     // Проверяем ширину экрана
+    if (screenWidth <= 575) {
+       $('.custom-center-style').fadeOut(0, function() { 
+            $(this).removeClass('custom-center-style').addClass('reviews__slider-carousel-item').fadeIn(0);
+        });
+    } else {
+        $(change).on('click', function() {
+        var slider = $('.reviews__slider-carousel'); // Замените на свой селектор
+        var centerIndex = slider.slick('slickCurrentSlide');
 
-   });
+        // Удаляем предыдущий custom-center-style класс у всех элементов
+        $('.reviews__slider-carousel-item').fadeOut(300, function() { 
+          $(this).removeClass('custom-center-style').fadeIn(300);
+        });
+        $('.custom-center-style').fadeOut(300, function() { 
+        $(this).removeClass('custom-center-style').addClass('reviews__slider-carousel-item').fadeIn(300);
+        });
+
+        // Добавляем custom-center-style класс к центральному слайду
+        $('.reviews__slider-carousel-item[data-slick-index="' + centerIndex + '"]').fadeOut(300, function() {
+        $(this).addClass('custom-center-style').removeClass('reviews__slider-carousel-item').fadeIn(300);
+      });
+
+      });
+    }
   }
 
   changeSlider('.slick-prev2')
   changeSlider('.slick-next2')
 
+  
   $(window).on('resize', function () {
     location.reload();
   });
@@ -162,6 +173,27 @@ $(document).ready(function(){
     hamburger.toggleClass('header__hamburger_active');
     menu.toggleClass('header__links-list_active');
   });
+
+   $('form').submit(function(e) { // после всех валидаций форма отправляется
+      e.preventDefault(); // откл стандартное поведение браузера
+
+      if(!$(this).valid()){
+          return; 
+      }
+
+      $.ajax({
+          type: "POST", // отдача данных
+          url: "mailer/smart.php", //куда отпр запрос
+          data: $(this).serialize() // что отправляем
+      }).done(function() {
+          $(this).find("input").val("");
+          $('#consultation, #order').fadeOut();
+          $('.overla, #thanks').fadeIn('slow');
+
+          $('form').trigger('reset');
+      });
+      return false;
+    });
 
 });
 
