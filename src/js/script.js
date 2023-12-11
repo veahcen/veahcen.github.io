@@ -119,7 +119,7 @@ $(document).ready(function(){
                 minlength: 2
             },
             phone: {
-                required: true,
+                required: true
             }
         },
         messages: {
@@ -138,7 +138,14 @@ $(document).ready(function(){
   validateForms('#consultation-form');
   validateForms('#modal-form');
 
-  $('input[name=phone]').mask("+7 (999) 999-99-99");
+  $('input[name="phone"]').mask('+7 999 999-99-99', {"minLength": 16}).on('keyup', function() {
+    var phone = $(this).val().replace(/\\D/g,'');
+    if(phone.length >= 16) {
+        this.setCustomValidity('');
+    } else {
+        this.setCustomValidity('Неверный формат, проверьте введённый номер!');
+    }
+});
 
   $("#menu").on("click", ".js-scroll", function (event) {
     event.preventDefault();
