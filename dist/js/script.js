@@ -110,13 +110,7 @@ $(document).ready(function(){
 
   changeSlider('.slick-prev2')
   changeSlider('.slick-next2')
-
   
-  $(window).on('resize', function () {
-    location.reload();
-  });
-
-
   function validateForms(form){
     $(form).validate({
         rules: {
@@ -194,7 +188,23 @@ $(document).ready(function(){
           $('form').trigger('reset');
       });
       return false;
-    });
+    }); 
 
+    var prevWidth = $(window).width();
+    var prevHeight = $(window).height();  
+
+    $(window).on('resize', function () {
+    var currentWidth = $(window).width();
+    var currentHeight = $(window).height();
+
+    // Проверяем изменение только ширины
+    if (currentWidth !== prevWidth) {
+        location.reload();
+    }
+
+    // Обновляем значения предыдущих размеров
+    prevWidth = currentWidth;
+    prevHeight = currentHeight;
+});
 });
 
