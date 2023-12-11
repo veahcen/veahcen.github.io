@@ -5,53 +5,56 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: red;
   display: block;
   z-index: 10;
 }
 
-// .reviews__wraper-block-img {
+
+// .reviews__wraper {
 //   &-olga {
-//    &:hover {
+//    &:hover::before {
+//      content: '';
+//      position: absolute;
+//      left: 50%;
+//      transform: translateX(-50%);
+//      top: 10px;
+//      z-index: inherit;
+//      width: 300px;
+//      height: 300px;
 //      background: url(../img/reviews/imageolga.png) center center/cover no-repeat;
-    
-//    }
-//   }
-//   &-nasta {
-//    &:hover {
-//      background: url(../img/reviews/imagenasta.png) center center/cover no-repeat;
-//    }
-//   }
-//   &-dmitry {
-//    &:hover {
-//      background: url(../img/reviews/imagedmitry.png) center center/cover no-repeat;
-//    }
-//   }
-//   &-elena {
-//    &:hover {
-//      background: url(../img/reviews/imageelena.png) center center/cover no-repeat;
-//    }
-//   }
-//   &-sergey {
-//    &:hover {
-//      background: url(../img/reviews/imagesergey.png) center center/cover no-repeat;
+     
 //    }
 //   }
 // }
 
-
 .reviews__wraper-block {
   &-olga {
-   &:hover {
+   &:hover::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 50%;
+     z-index: 11;
+     top: 0px;
+     transform: translateX(-50%);
      background: url(../img/reviews/imageolga.png) center center/cover no-repeat;
      color: transparent;
      .reviews__wraper-block-img {
       display: none;
-   }
+    }
    }
   }
   &-nasta {
-   &:hover {
+   &:hover::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 50%;
+     z-index: 11;
+     top: 0px;
+     transform: translateX(-50%);
      background: url(../img/reviews/imagenasta.png) center center/cover no-repeat;
      color: transparent;
      .reviews__wraper-block-img {
@@ -60,7 +63,15 @@
    }
   }
   &-dmitry {
-   &:hover {
+   &:hover::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 50%;
+     z-index: 11;
+     top: 0px;
+     transform: translateX(-50%);
      background: url(../img/reviews/imagedmitry.jpg) center center/cover no-repeat;
      color: transparent;
      .reviews__wraper-block-img {
@@ -69,7 +80,15 @@
    }
   }
   &-elena {
-   &:hover {
+   &:hover::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 50%;
+     z-index: 11;
+     top: 0px;
+     transform: translateX(-50%);
      background: url(../img/reviews/imageelena.jpg) center center/cover no-repeat;
      color: transparent;
      .reviews__wraper-block-img {
@@ -78,7 +97,15 @@
    }
   }
   &-sergey {
-   &:hover {
+   &:hover::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 50%;
+     z-index: 11;
+     top: 0px;
+     transform: translateX(-50%);
      background: url(../img/reviews/imagesergey.png) center center/cover no-repeat;
      color: transparent;
      .reviews__wraper-block-img {
