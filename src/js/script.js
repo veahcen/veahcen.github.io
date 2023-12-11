@@ -157,8 +157,9 @@ $(document).ready(function(){
       $('.overla, #order').fadeIn('slow'); // показать окно и задний фон
   });
   $('.modal__close').on('click', function() {
-      $('.overla, #order').fadeOut('slow'); // закрыть окно
+      $('.overla, #order, #thanks').fadeOut('slow'); // закрыть окно
   });
+
   
   const menu = $('.header__links-list');
   const menuItem = $('.header__links-list-item');

@@ -63,6 +63,33 @@
         }
       }
     }
+    &-balconydecoration {
+      position: relative;
+      background: url(../img/balconydecoration.jpg) center center/cover no-repeat;
+      &:hover {
+        .overlay {
+          display: block;
+        }
+      }
+    }
+    &-softwindows {
+      position: relative;
+      background: url(../img/softwindows.jpg) center center/cover no-repeat;
+      &:hover {
+        .overlay {
+          display: block;
+        }
+      }
+    }
+    &-stretchceilings {
+      position: relative;
+      background: url(../img/stretchceilings.jpg) center center/cover no-repeat;
+      &:hover {
+        .overlay {
+          display: block;
+        }
+      }
+    }
   }
   &__text {
     max-height: 120px;
